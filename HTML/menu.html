@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Mi Sitio Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: url('https://www.clinicascita.com/wp-content/uploads/2018/07/adiccion-a-los-videojuegos-1024x655.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+
+    nav {
+      background-color: rgba(44, 62, 80, 0.9);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f39c12;
+    }
+
+    header {
+      background-color: rgba(44, 62, 80, 0.8);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 10px 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #2c3e50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s;
+    }
+
+    .card a:hover {
+      background-color: #f39c12;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(44, 62, 80, 0.9);
+      color: #fff;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="menu.html" class="logo">Mi Sitio Web</a>
+    <ul>
+      <li><a href="adiccion-celular.html">Adicción al Celular</a></li>
+      <li><a href="salud-mental-subtema.html">Salud Mental</a></li>
+      <li><a href="senales-advertencia.html">Señales</a></li>
+      <li><a href="consejos-uso-saludable.html">Consejos</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Bienvenido a Mi Sitio Web</h1>
+    <p>Explora los temas sobre el impacto del celular en la salud mental</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Adicción al Celular</h2>
+      <p>Aprende qué es la adicción al celular, sus causas y consecuencias.</p>
+      <a href="adiccion-celular.html">Ver más</a>
+    </div>
+
+    <div class="card">
+      <h2>Salud Mental</h2>
+      <p>Explora la relación entre el uso excesivo del celular y la salud mental.</p>
+      <a href="salud-mental.html">Ver más</a>
+    </div>
+
+    <div class="card">
+      <h2>Señales de Advertencia</h2>
+      <p>Conoce las señales que indican un uso problemático del celular.</p>
+      <a href="senales-advertencia.html">Ver más</a>
+    </div>
+
+    <div class="card">
+      <h2>Consejos Saludables</h2>
+      <p>Descubre consejos prácticos para usar el celular de manera equilibrada.</p>
+      <a href="consejos-uso-saludable.html">Ver más</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Mi Sitio Web | Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
