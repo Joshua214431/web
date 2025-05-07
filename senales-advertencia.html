@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Señales de Advertencia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fefefe, #d6e6f5);
+      color: #333;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      background: linear-gradient(135deg, #e67e22, #d35400);
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      animation: slideDown 1s ease;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      animation: fadeInCard 1.2s ease;
+    }
+
+    @keyframes fadeInCard {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    section {
+      margin-bottom: 35px;
+    }
+
+    section h2 {
+      color: #e67e22;
+      border-left: 6px solid #e67e22;
+      padding-left: 12px;
+      margin-bottom: 15px;
+      font-size: 1.9rem;
+      display: flex;
+      align-items: center;
+    }
+
+    section h2::before {
+      content: "⚠️";
+      margin-right: 10px;
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      background: #fff7f0;
+      margin: 12px 0;
+      padding: 15px 20px;
+      border-left: 5px solid #e67e22;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    ul li:hover {
+      background: #ffe6cc;
+    }
+
+    ul li::before {
+      content: "📱";
+      margin-right: 12px;
+      font-size: 1.4rem;
+    }
+
+    .extra-info {
+      background: #f0f9ff;
+      padding: 20px;
+      border-left: 6px solid #3498db;
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      background: #34495e;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    .volver-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(135deg, #2980b9, #6dd5fa);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .volver-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .volver-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Señales de Advertencia de Adicción al Celular</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Cómo reconocerlas?</h2>
+      <p>
+        Es importante detectar las señales que indican una posible dependencia al celular. A continuación, te mostramos los principales síntomas que deben ponerte en alerta.
+      </p>
+    </section>
+
+    <section>
+      <h2>Señales Clave</h2>
+      <ul>
+        <li>Ansiedad o malestar cuando el celular no está cerca.</li>
+        <li>Revisar el móvil cada pocos minutos, incluso sin motivo.</li>
+        <li>Descuidar responsabilidades académicas, laborales o familiares por estar conectado.</li>
+        <li>Dificultad para dormir por uso prolongado del teléfono en la noche.</li>
+        <li>Sentir nerviosismo por no contestar mensajes o notificaciones al instante.</li>
+        <li>Menor tiempo de calidad con amigos y familia debido al uso excesivo del dispositivo.</li>
+        <li>Aislamiento social o preferencia por interactuar solo en línea.</li>
+        <li>Dolores físicos como tensión en el cuello, manos o vista por uso prolongado.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>¿Qué hacer?</h2>
+      <p>
+        Si detectas varias de estas señales en tu comportamiento, considera implementar límites diarios, desconectar durante actividades importantes y pedir apoyo si sientes que no puedes controlar el uso por ti mismo.
+      </p>
+    </section>
+
+    <div class="extra-info">
+      <strong>🌟 Consejos adicionales:</strong>
+      <ul>
+        <li>Configura recordatorios o alarmas para tomar descansos digitales.</li>
+        <li>Silencia notificaciones innecesarias para reducir la tentación.</li>
+        <li>Designa momentos específicos del día para revisar redes sociales.</li>
+        <li>Prueba actividades fuera de línea como deportes, arte o lectura.</li>
+        <li>Habla con familiares o amigos sobre cómo te sientes.</li>
+      </ul>
+    </div>
+
+    <iframe width="315" height="200" src="https://www.youtube.com/embed/e3Ian3UEauk?si=nc4p6ldcPdpAOpO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="volver-container">
+      <a href="menu.html" class="volver-btn">Volver a la página principal</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Mi Sitio Web | Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
